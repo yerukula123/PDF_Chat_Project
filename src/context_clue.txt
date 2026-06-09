@@ -1,0 +1,2 @@
+Conclusion: Because of high attention on 'loan',
+the AI knows 'bank' means a financial institution.
