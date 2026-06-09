@@ -1,0 +1,2 @@
+✅ SAFE: Your .env file is invisible to Git.
+You can now safely share your code without leaking keys.
