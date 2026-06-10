@@ -1,0 +1,20 @@
+--- Semantic Similarity Test ---
+
+Sentence A:
+The cat is sleeping on the mat.
+
+Sentence B:
+A kitten is napping on the rug.
+
+Similarity Score:
+0.8000
+
+Sentence C:
+A feline is resting on the floor.
+
+Similarity Score:
+0.7919
+
+Observation:
+The similarity scores remain high even when different words are used.
+This proves that embeddings understand meaning, not just exact keywords.
