@@ -1,0 +1,13 @@
+Euclidean Distance Test
+
+Sentence A:
+The dog is in the park.
+
+Sentence B:
+I want to buy a new laptop.
+
+Distance Score:
+0.9106
+
+Observation:
+The distance is high because the meanings of the two sentences are unrelated.
