@@ -1,0 +1,12 @@
+ import google.generativeai as genai
+--- 🧠 Clustering Your Thoughts ---
+Group 2 | Apples are a great source of fiber.
+Group 2 | Bananas contain high levels of potassium.
+Group 0 | Python is a versatile programming language.
+Group 0 | Java is used for building enterprise apps.
+Group 2 | Oranges are famous for Vitamin C.
+Group 0 | C++ is a powerful language for systems.
+Group 1 | The moon orbits the Earth.
+Group 1 | Astronauts travel into outer space.
+
+✅ SUCCESS: The AI automatically grouped similar topics!
