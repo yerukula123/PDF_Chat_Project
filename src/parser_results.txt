@@ -1,0 +1,4 @@
+Type of Raw: <class 'langchain_core.messages.ai.AIMessage'>
+
+🍔 CLEAN TEXT (The Burger): 'Hello'
+Type of Clean: <class 'langchain_core.messages.base.TextAccessor'>
