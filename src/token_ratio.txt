@@ -1,0 +1,6 @@
+Ratio: ~5.54 characters per token
+
+Character Count: 216
+Token Count: 39
+
+This demonstrates that AI models count tokens instead of characters. The token count is much smaller than the character count, which is important when calculating context window limits and API costs.
