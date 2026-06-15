@@ -1,0 +1,4 @@
+✂️ Phase 2: Chopped PDF into 1 optimized chunks.
+
+Metadata:
+{'producer': 'Microsoft® Word 2024', 'creator': 'Microsoft® Word 2024', 'creationdate': '2026-06-14T21:12:41+05:30', 'author': 'Yerukula sathish', 'moddate': '2026-06-14T21:12:41+05:30', 'source': 'docs\textbook.pdf', 'total_pages': 1, 'page': 0, 'page_label': '1'}
