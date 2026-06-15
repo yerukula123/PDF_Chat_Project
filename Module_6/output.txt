@@ -1,0 +1,3 @@
+--- SEARCH TEST ---
+Keyword Search for 'cake': ['Baking a chocolate cake requires eggs and flour.']
+Vector Search finds the 'Tech' coordinate: Deep learning is a subset of artificial intelligence.
