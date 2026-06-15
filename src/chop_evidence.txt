@@ -1,0 +1,9 @@
+--- ✂️ The Brutal Chop: Fixed-Size Chunking ---
+Chunk 1 (34 chars): 'The CPU is the brain of the comput'
+Chunk 2 (35 chars): 'er. It handles all instructions.\nPy'
+Chunk 3 (35 chars): 'thon is a great language for beginn'
+Chunk 4 (35 chars): 'ers because its syntax is clean.\nAr'
+Chunk 5 (35 chars): 'tificial Intelligence is changing t'
+Chunk 6 (29 chars): 'he world as we know it today.'
+
+⚠️ NOTICE: Look for words split across chunks.
