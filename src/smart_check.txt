@@ -1,0 +1,7 @@
+Smart Audit
+
+No words were cut.
+
+The RecursiveCharacterTextSplitter kept words intact and tried to split at logical boundaries such as spaces and sentence breaks.
+
+This is better than the Brutal Chop because the Brutal Chop split words like "computer" into separate pieces, which can cause loss of meaning. Recursive splitting preserves semantic context, making document retrieval and RAG systems more accurate.
