@@ -1,0 +1,13 @@
+Safety Audit
+
+Overlap between Chunk 1 and Chunk 2:
+"edient to a gre"
+
+Overlap between Chunk 2 and Chunk 3:
+"at RAG system i"
+
+Overlap between Chunk 3 and Chunk 4:
+"s a healthy amo"
+
+Conclusion:
+Chunk overlap successfully repeated text between chunks, preventing information loss during splitting.
