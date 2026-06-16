@@ -1,5 +1,1 @@
-The overlapping phrase between Chunk 1 and Chunk 2 is:
-
-"It is about"
-
-This overlap helps preserve context between chunks so that important information is not lost when the text is split. It improves retrieval accuracy and helps the AI understand related information across chunk boundaries.
+The overlapping phrase between Chunk 1 and Chunk 2 is "It is about".
