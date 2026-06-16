@@ -2,3 +2,5 @@
 venv/
 venv312/
 __pycache__/
+my_local_bank/
+processed_pdf_bank/
