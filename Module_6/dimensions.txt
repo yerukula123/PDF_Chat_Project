@@ -1,0 +1,1 @@
+I think the computer needs 384 numbers because each number represents a different aspect of the sentence's meaning, helping the AI compare and understand text accurately.
