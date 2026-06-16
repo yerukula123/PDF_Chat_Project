@@ -1,0 +1,1 @@
+The index.faiss file size is 2 KB.
