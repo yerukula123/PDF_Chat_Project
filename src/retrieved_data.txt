@@ -1,0 +1,5 @@
+Question: What is a computer?
+
+Chunk 1: Python is a popular programming language for data science.
+
+Chunk 2: Photosynthesis is how plants turn sunlight into energy.
