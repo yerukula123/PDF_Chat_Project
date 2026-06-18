@@ -1,34 +1,25 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="PDF Architect",
+    page_title="PDF Loader",
     layout="wide"
 )
 
 with st.sidebar:
-    st.title("🛠️ Control Center")
+    st.title("📂 Document Center")
 
-    st.info("Step 1: Upload your PDF\nStep 2: Ask a question")
+    uploaded_file = st.file_uploader(
+        "Upload a PDF textbook",
+        type="pdf"
+    )
 
-    st.divider()
+    if uploaded_file is not None:
+        st.success(f"Successfully uploaded: {uploaded_file.name}")
 
-    st.markdown("### 🚦 System Status")
-    st.success("PDF Engine: Ready")
+        file_size = len(uploaded_file.getvalue()) / 1024
+        st.info(f"File Size: {file_size:.2f} KB")
+    else:
+        st.warning("Please upload a PDF to begin.")
 
-    # Add your name here
-    st.write("User: Sathish")
-
-    st.caption("v1.0.4 - Phase 2 Internship")
-
-st.title("💬 Chat with your PDF")
-
-st.write("The main area is now clean and ready for your conversation.")
-
-col1, col2 = st.columns([3, 1])
-
-with col1:
-    st.subheader("Recent Activity")
-    st.write("No questions asked yet.")
-
-with col2:
-    st.button("Clear Chat History")
+st.title("🤖 AI Research Assistant")
+st.write("Upload a document in the sidebar to start the conversation.")

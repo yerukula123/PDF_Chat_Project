@@ -1,0 +1,11 @@
+Uploader Proof
+
+PDF Upload Test: SUCCESS
+
+Uploaded File:
+<: Coursera 5K5MXX0P4IZD>
+
+Result:
+Green success message displayed.
+File size displayed correctly.
+Sidebar uploader working.
