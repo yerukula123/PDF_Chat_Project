@@ -1,32 +1,39 @@
 import streamlit as st
 
 # Page Setup
-st.set_page_config(
-    page_title="PDF Chat Room",
-    layout="wide"
-)
+st.set_page_config(page_title="AI Memory Lab", layout="wide")
 
-# Sidebar
-with st.sidebar:
-    st.title("📂 Documents")
-    st.file_uploader("Upload PDF", type="pdf")
+st.title("🧠 Chat with Memory")
 
-# Main Area
-st.title("🤖 PDF Research Room")
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
-# Example User Bubble
-with st.chat_message("user"):
-    st.write("Hello! Can you help me find information in my PDF?")
+# Display chat history
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
-# Example Assistant Bubble
-with st.chat_message("assistant"):
-    st.write("Of course! Please upload a file and ask away.")
+# User input
+if prompt := st.chat_input("Ask me anything..."):
 
-# Chat Input
-if user_prompt := st.chat_input("Type your question here..."):
+    # Save user message
+    st.session_state.messages.append(
+        {"role": "user", "content": prompt}
+    )
 
+    # Display user message
     with st.chat_message("user"):
-        st.write(user_prompt)
+        st.markdown(prompt)
 
+    # Fake AI response
+    response = f"I remembered you said: {prompt}"
+
+    # Display AI response
     with st.chat_message("assistant"):
-        st.write(f"I am processing your question: '{user_prompt}'")
+        st.markdown(response)
+
+    # Save AI response
+    st.session_state.messages.append(
+        {"role": "assistant", "content": response}
+    )
