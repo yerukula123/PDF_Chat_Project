@@ -1,20 +1,26 @@
-# Import the 'os' module to interact with your computer's operating system
-import os
+import streamlit as st
 
-# Create a variable to store the project name
-project_name = "PDF Chat Project"
+st.set_page_config(
+    page_title="PDF Chat Bot",
+    page_icon="🚀"
+)
 
-# Create a welcome message
-welcome_message = "Welcome to your AI Command Center!"
+st.title("🚀 Chat with your PDF")
 
-# Print the welcome message
-print(welcome_message)
+st.subheader(
+    "Turn your textbooks into an interactive conversation."
+)
 
-# Print the project name
-print("Project Name:", project_name)
+st.write(
+    "Welcome! This app uses RAG technology to answer questions from your documents."
+)
 
-# Check if config.txt exists
-if os.path.exists("config.txt"):
-    print("Success: VS Code sees your project files!")
-else:
-    print("Error: config.txt not found in this folder.")
+if st.button("Say Hello to my AI"):
+    st.success(
+        "Hello, Future AI Engineer! Your interface is working."
+    )
+
+st.sidebar.title("App Settings")
+st.sidebar.info(
+    "Upload your PDF to get started."
+)
