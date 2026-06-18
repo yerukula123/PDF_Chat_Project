@@ -1,21 +1,34 @@
 import streamlit as st
-import random
 
 st.set_page_config(
-    page_title="Magic Rerun Lab",
-    page_icon="🪄"
+    page_title="PDF Architect",
+    layout="wide"
 )
 
-st.title("🪄 The Magic Execution Lab")
+with st.sidebar:
+    st.title("🛠️ Control Center")
 
-lucky_number = random.randint(1, 100)
-st.write(f"🎲 Your 'Lucky Number' for this rerun is: **{lucky_number}**")
+    st.info("Step 1: Upload your PDF\nStep 2: Ask a question")
 
-if st.button("Trigger a Rerun"):
-    st.write("The button was clicked! Streamlit is rerunning...")
+    st.divider()
 
-user_text = st.text_input("Type something and hit Enter:")
-if user_text:
-    st.write(f"You typed: {user_text}")
+    st.markdown("### 🚦 System Status")
+    st.success("PDF Engine: Ready")
 
-st.info("✨ I am a Real-Time Developer now!")
+    # Add your name here
+    st.write("User: Sathish")
+
+    st.caption("v1.0.4 - Phase 2 Internship")
+
+st.title("💬 Chat with your PDF")
+
+st.write("The main area is now clean and ready for your conversation.")
+
+col1, col2 = st.columns([3, 1])
+
+with col1:
+    st.subheader("Recent Activity")
+    st.write("No questions asked yet.")
+
+with col2:
+    st.button("Clear Chat History")

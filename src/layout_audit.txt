@@ -1,0 +1,17 @@
+Layout Audit
+
+Sidebar Verified
+
+🛠️ Control Center
+🚦 System Status
+PDF Engine: Ready
+
+User: Sathish
+
+Main Area:
+💬 Chat with your PDF
+
+Recent Activity:
+No questions asked yet.
+
+Result: SUCCESS
