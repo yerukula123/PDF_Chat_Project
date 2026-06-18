@@ -1,0 +1,7 @@
+Streamlit Hello Demo
+
+Status: Success
+
+Local URL: http://localhost:8501
+
+Streamlit demo launched successfully.
