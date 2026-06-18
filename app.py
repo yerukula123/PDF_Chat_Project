@@ -1,25 +1,32 @@
 import streamlit as st
 
+# Page Setup
 st.set_page_config(
-    page_title="PDF Loader",
+    page_title="PDF Chat Room",
     layout="wide"
 )
 
+# Sidebar
 with st.sidebar:
-    st.title("📂 Document Center")
+    st.title("📂 Documents")
+    st.file_uploader("Upload PDF", type="pdf")
 
-    uploaded_file = st.file_uploader(
-        "Upload a PDF textbook",
-        type="pdf"
-    )
+# Main Area
+st.title("🤖 PDF Research Room")
 
-    if uploaded_file is not None:
-        st.success(f"Successfully uploaded: {uploaded_file.name}")
+# Example User Bubble
+with st.chat_message("user"):
+    st.write("Hello! Can you help me find information in my PDF?")
 
-        file_size = len(uploaded_file.getvalue()) / 1024
-        st.info(f"File Size: {file_size:.2f} KB")
-    else:
-        st.warning("Please upload a PDF to begin.")
+# Example Assistant Bubble
+with st.chat_message("assistant"):
+    st.write("Of course! Please upload a file and ask away.")
 
-st.title("🤖 AI Research Assistant")
-st.write("Upload a document in the sidebar to start the conversation.")
+# Chat Input
+if user_prompt := st.chat_input("Type your question here..."):
+
+    with st.chat_message("user"):
+        st.write(user_prompt)
+
+    with st.chat_message("assistant"):
+        st.write(f"I am processing your question: '{user_prompt}'")

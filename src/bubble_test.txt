@@ -1,0 +1,13 @@
+Bubble Test
+
+Messages Sent:
+1. Hello
+2. How are you?
+3. Testing
+
+Result:
+Chat bubbles displayed correctly.
+User messages appeared.
+Assistant messages appeared.
+
+Topic 7 completed successfully.
