@@ -1,26 +1,17 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="PDF Chat Bot",
-    page_icon="🚀"
+    page_title="PDF Chat Architect",
+    page_icon="🤖",
+    layout="wide"
 )
 
-st.title("🚀 Chat with your PDF")
+st.title("🤖 PDF Chat Architect")
 
-st.subheader(
-    "Turn your textbooks into an interactive conversation."
-)
+st.subheader("Your Intelligent PDF Retrieval Assistant")
 
-st.write(
-    "Welcome! This app uses RAG technology to answer questions from your documents."
-)
+st.divider()
 
-if st.button("Say Hello to my AI"):
-    st.success(
-        "Hello, Future AI Engineer! Your interface is working."
-    )
+st.sidebar.success("Foundation Pipeline: Online")
 
-st.sidebar.title("App Settings")
-st.sidebar.info(
-    "Upload your PDF to get started."
-)
+st.write("The foundation is set. Ready to integrate the RAG engine.")
